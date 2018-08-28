@@ -6,16 +6,30 @@ import Footer from './Footer'
 
 export default props => (
   <Fragment>
-    <Container>
-      <Navbar/>
-    </Container>
-    <div className='bg-home page-header'>
+    <div className="header-wrapper">
+      <div className="navbar-wrapper">
+        <Container>
+          <Navbar/>
+        </Container>
+      </div>
+      <div className='bg-home page-header'>
 
+      </div>
     </div>
     {/* <SvgLoader src='/static/images/home-background.svg'/> */}
     {props.children}
     <Footer />
     <style jsx>{`
+      .header-wrapper {
+        position: relative;
+      }
+      .navbar-wrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+      }
       .bg-home {
         background-image: url(/static/images/home-background.svg);
         height: 75vh;

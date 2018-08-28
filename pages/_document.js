@@ -18,7 +18,7 @@ export default class MyDocument extends Document {
         </body>
         <style global jsx>{`
           a {
-            // color: white !important;
+            color: white !important;
             text-decoration: none !important;
           }
           a:hover {
