@@ -1,8 +1,7 @@
 export default [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
-  { href: "/portfolio", label: "Portfolio" },
+  { href: "/expertise", label: "Expertise" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" }
 ].map(link => {
