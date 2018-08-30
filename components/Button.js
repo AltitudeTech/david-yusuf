@@ -41,6 +41,11 @@ export default props => {
         color: ${hoverColor} !important;
         background-color: ${hoverBackgroundColor} !important;
       }
+      a::after{
+        content : " \u3009"  ;
+        font-weight : bolder ;
+        color : #DAA520 ;
+      }
     `}</style>
   </Fragment>
 }

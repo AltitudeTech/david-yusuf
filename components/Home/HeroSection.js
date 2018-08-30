@@ -6,7 +6,8 @@ export default () => (
   <Section>
     <Container>
       <div className="hero">
-        <h1 className="title">Lorem ipsum dolor<br/> sit amet!</h1>
+        <h2 className="title">MY TALENT IS A</h2>
+        <h3 className="subtitle">GIFT FROM GOD</h3>
       </div>
       <br />
       <Row>
@@ -58,11 +59,16 @@ export default () => (
         color: #333;
       }
       .title {
-        margin: 0;
         width: 100%;
         // padding-top: 80px;
         line-height: 1.15;
-        font-size: 68px;
+        font-size:3em ;
+        text-align: center;
+      }
+      .subtitle {
+        width: 100%;
+        line-height: 1.15;
+        font-size: 2em ;
         text-align: center;
       }
       .p {

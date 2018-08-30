@@ -34,9 +34,9 @@ class NavBar extends Component {
     return (
       <Navbar
         color="transparent"
-        // color="dark"
+        style={{marginTop : '20px'}}
         light expand="md">
-        <NavbarBrand href="/"><SvgLoader src='/static/images/logo.svg' className="svg-logo"/></NavbarBrand>
+        <NavbarBrand href="/"><SvgLoader src='/static/images/logo1.svg' className="svg-logo"/></NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="ml-auto" navbar>
@@ -49,6 +49,12 @@ class NavBar extends Component {
             ))}
           </Nav>
         </Collapse>
+        <style jsx>{`
+          .nav-link{
+            cursor:pointer ;
+          }
+        `}
+        </style>
       </Navbar>
     );
   }

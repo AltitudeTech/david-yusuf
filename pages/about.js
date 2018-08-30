@@ -9,22 +9,17 @@ import HeroSection from "../components/Home/HeroSection";
 import HireMeSection from "../components/Home/HireMeSection";
 import BlogSection from "../components/Home/BlogSection";
 import BlankSection from "../components/Home/BlankSection";
+import { Container, Row, Col } from "reactstrap";
 
 
-const home = (<div className="bg-home page-header">
+const about = (<div className="bg-home page-header">
                 <div className="header-container">
                   <div className="video-container">
-                      <video
-                      preload="true"
-                      autoPlay="autoplay"
-                      loop="loop"
-                      volume="0"
-                      poster="/static/images/home-background.svg"
-                      >
-                      <source src="/static/video/davidyusuf.mp4" type="video/mp4" />
-                      <source src="/static/video/davidyusuf.webm" type="video/webm" />
-                      <source src="/static/video/davidyusuf.ogg" type="video/ogg" />
-                      </video>
+                      <Col md={4}>
+
+                      </Col>
+                      <Col md={8}>
+                      </Col>
                   </div>
                 </div>
                 <style jsx>{`
@@ -56,9 +51,10 @@ const home = (<div className="bg-home page-header">
                 </style>
               </div>) ;
 
+
 const Home = () => (
   <Fragment>
-    <Layout header={home}>
+    <Layout header={about}>
       {/* <Head title="Home" /> */}
       {/* <Nav /> */}
       <HeroSection />

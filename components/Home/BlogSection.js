@@ -24,7 +24,7 @@ export default () => (
             <br />
             <br />
             <br />
-            <Button dark text='View More Posts →'/>
+            <Button dark text='View More Posts '/>
           </div>
         </Container>
       </div>
