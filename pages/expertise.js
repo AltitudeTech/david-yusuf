@@ -1,14 +1,6 @@
 import React, { Fragment } from "react";
 import {Container} from "reactstrap";
-// import Link from "next/link";
-
-
-
-// import Head from '../components/head'
 import Layout from "../components/Layout";
-import HeroSection from "../components/Home/HeroSection";
-import HireMeSection from "../components/Home/HireMeSection";
-import BlogSection from "../components/Home/BlogSection";
 import BlankSection from "../components/Home/BlankSection";
 import MediaFullwidth from "../components/Home/MediaFullwidth";
 
@@ -45,7 +37,7 @@ const expertise = (<div className="bg-home page-header">
                     </style>
                     </div>) ;
 
-const Home = () => (
+const Expertise = () => (
   <Fragment>
     <Layout header={expertise}>
       <MediaFullwidth />
@@ -54,4 +46,4 @@ const Home = () => (
   </Fragment>
 );
 
-export default Home;
+export default Expertise;
