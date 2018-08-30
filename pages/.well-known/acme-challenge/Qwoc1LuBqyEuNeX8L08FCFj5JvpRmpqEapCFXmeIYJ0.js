@@ -1,1 +1,10 @@
-Qwoc1LuBqyEuNeX8L08FCFj5JvpRmpqEapCFXmeIYJ0.iiBvzxQwG_LuUQgCoX6F7PSYLfELlWSHw3TFlztkWbA
+import React, { Component } from 'react';
+
+export default class  extends Component {
+    state = {  }
+    render() {
+        return (
+            'Qwoc1LuBqyEuNeX8L08FCFj5JvpRmpqEapCFXmeIYJ0.iiBvzxQwG_LuUQgCoX6F7PSYLfELlWSHw3TFlztkWbA'           
+        );
+    }
+}
