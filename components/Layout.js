@@ -45,7 +45,6 @@ export default props => (
         z-index: 10;
       }
       .bg-home {
-        *background-image: url(/static/images/home-background.svg);
         height: 75vh;
         width: 100%;
       }
