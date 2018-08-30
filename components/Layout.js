@@ -3,17 +3,17 @@ import { Container } from "reactstrap";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 // import SvgLoader from 'bv-react-svgloader'
+
 export default props => (
   <Fragment>
     <div className="header-wrapper">
       <div className="navbar-wrapper">
         <Container>
-          <Navbar />
+          <Navbar about={props.about} />
         </Container>
       </div>
       {props.header}
     </div>
-    {/* <SvgLoader src='/static/images/home-background.svg'/> */}
     {props.children}
     <Footer />
     <style jsx>{`

@@ -12,9 +12,9 @@ import BlogSection from "../components/Home/BlogSection";
 import BlankSection from "../components/Home/BlankSection";
 
 const contact = (<div className="bg-home page-header">
-                        <Container>
-                            <h2>Contact</h2>
-                        </Container>
+                    <Container>
+                        <h2>Contact</h2>
+                    </Container>
                     <style jsx>{`
                         .bg-home {
                             background-image:url('/static/images/contactbg.jpg') ;
@@ -44,7 +44,7 @@ const contact = (<div className="bg-home page-header">
                           }
                     `}
                     </style>
-                    </div>) ;
+                  </div>) ;
 
 const Contact = () => (
   <Fragment>

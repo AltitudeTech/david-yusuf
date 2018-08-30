@@ -54,7 +54,7 @@ const about = (<div className="bg-home page-header">
 
 const Home = () => (
   <Fragment>
-    <Layout header={about}>
+    <Layout header={about} about="logo">
       {/* <Head title="Home" /> */}
       {/* <Nav /> */}
       <HeroSection />
