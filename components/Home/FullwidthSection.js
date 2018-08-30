@@ -36,12 +36,6 @@ export default () => (
         width: 100%;
         color: #333;
       }
-      .p {
-        margin: 0;
-        padding: 12px 0 0;
-        font-size: 13px;
-        color: #333;
-      }
     `}</style>
   </Section>
 );
