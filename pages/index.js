@@ -28,7 +28,7 @@ const home = (<div className="bg-home page-header">
                 <style jsx>{`
                   .header-container {
                     width: 100%;
-                    height: 650px;
+                    height: 85vh;
                     border-left: none;
                     border-right: none;
                     position: relative;

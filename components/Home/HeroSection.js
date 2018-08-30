@@ -60,7 +60,7 @@ export default () => (
       }
       .title {
         width: 100%;
-        // padding-top: 80px;
+        font-weight : bold ;
         line-height: 1.15;
         font-size:3em ;
         text-align: center;
@@ -68,6 +68,7 @@ export default () => (
       .subtitle {
         width: 100%;
         line-height: 1.15;
+        font-weight : bold ;
         font-size: 2em ;
         text-align: center;
       }

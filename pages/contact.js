@@ -19,7 +19,7 @@ const contact = (<div className="bg-home page-header">
                         .bg-home {
                             background-image:url('/static/images/contactbg.jpg') ;
                             background-size: contain ;
-                            height: 75vh;
+                            height: 85vh;
                             width: 100%;
                           }
                         .page-header {
@@ -38,6 +38,7 @@ const contact = (<div className="bg-home page-header">
                             color : #fff ;
                             text-transform: uppercase ;
                             text-align: right ;
+                            font-weight : bold ;
                             margin-top : 250px ;
                             margin-bottom : 0 ;
                             font-size : 4em ;

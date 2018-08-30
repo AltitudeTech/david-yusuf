@@ -10,6 +10,7 @@ import HeroSection from "../components/Home/HeroSection";
 import HireMeSection from "../components/Home/HireMeSection";
 import BlogSection from "../components/Home/BlogSection";
 import BlankSection from "../components/Home/BlankSection";
+import MediaFullwidth from "../components/Home/MediaFullwidth";
 
 const expertise = (<div className="bg-home page-header">
                         <Container>
@@ -18,7 +19,7 @@ const expertise = (<div className="bg-home page-header">
                     <style jsx>{`
                         .bg-home {
                             background-image:url('/static/images/home-background.svg') ;
-                            height: 75vh;
+                            height: 85vh;
                             width: 100%;
                           }
                         .page-header {
@@ -28,7 +29,6 @@ const expertise = (<div className="bg-home page-header">
                             padding: 0;
                             overflow: hidden;
                             position: relative;
-                            // max-height: 1000px;
                             align-items: center;
                             background-size: cover;
                             background-position: center center;
@@ -37,6 +37,7 @@ const expertise = (<div className="bg-home page-header">
                             color : #fff ;
                             text-transform: uppercase ;
                             margin-top : 250px ;
+                            font-weight : bold ;
                             margin-bottom : 0 ;
                             font-size : 4em ;
                           }
@@ -47,11 +48,7 @@ const expertise = (<div className="bg-home page-header">
 const Home = () => (
   <Fragment>
     <Layout header={expertise}>
-      {/* <Head title="Home" /> */}
-      {/* <Nav /> */}
-      <HeroSection />
-      <HireMeSection />
-      <BlogSection />
+      <MediaFullwidth />
       <BlankSection />
     </Layout>
   </Fragment>
