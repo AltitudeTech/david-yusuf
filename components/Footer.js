@@ -11,8 +11,6 @@ const socialLinks = [
   {img: '/static/images/social/youtube.svg', link: 'https://youtube.com/'}
 ]
 export default () => {
-
-
   return <footer className='Footer'>
     <Container>
       <nav>
