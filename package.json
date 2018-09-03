@@ -1,32 +1,21 @@
 {
-  "name": "david-yusuf",
-  "main": "index.js",
-  "author": "DavyBello <bellooladipupo41@gmail.com>",
-  "license": "MIT",
+  "name": "Keystone-graphql-nextjs",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "preexport": "npm run build",
-    "export": "next export",
-    "prestart": "npm run export",
-    "start": "serve out"
+    "start:client": "cd client && npm run start",
+    "start:api": "cd api && npm run start",
+    "start": "npm run start:api && npm run start:client",
+    "build:client": "cd client && npm run build",
+    "build:api": "cd api && npm run build",
+    "build": "concurrently \"npm run build:api\" \"npm run build:client\"",
+    "dev:client": "cd client && npm run dev",
+    "dev:api": "cd api && npm run dev",
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:client\"",
+    "install": "concurrently \"cd api && yarn --ignore-engines\" \"cd client && yarn --ignore-engines\""
   },
   "dependencies": {
-    "bv-react-svgloader": "^1.1.0",
-    "isomorphic-unfetch": "^2.1.1",
-    "next": "^6.1.1",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-ga": "^2.5.3",
-    "reactstrap": "^6.4.0",
-    "serve": "^10.0.0",
-    "svgs": "^3.2.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "babel-eslint": "^9.0.0",
-    "eslint": "^5.4.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-react": "^7.11.1"
+    "concurrently": "^3.4.0"
   }
 }
