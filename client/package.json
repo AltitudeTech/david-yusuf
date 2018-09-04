@@ -12,13 +12,20 @@
     "start": "serve out"
   },
   "dependencies": {
+    "apollo-boost": "^0.1.15",
+    "babel-plugin-inline-dotenv": "^1.1.2",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
     "bv-react-svgloader": "^1.1.0",
     "fs-extra": "^7.0.0",
+    "graphql": "^14.0.0",
     "isomorphic-unfetch": "^2.1.1",
+    "moment": "^2.22.2",
     "next": "^6.1.1",
     "react": "^16.4.2",
+    "react-apollo": "^2.1.11",
     "react-dom": "^16.4.2",
     "react-ga": "^2.5.3",
+    "react-js-pagination": "^3.0.2",
     "reactstrap": "^6.4.0",
     "serve": "^10.0.0",
     "svgs": "^3.2.1"
