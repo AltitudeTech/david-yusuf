@@ -19,6 +19,7 @@ node_modules
 /coverage
 
 # production
+api/routes/client
 client/build
 client/dist
 client/.next
