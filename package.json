@@ -1,19 +1,23 @@
 {
-  "name": "Keystone-graphql-nextjs",
+  "name": "david-yusuf",
+  "author": "DavyBello <bellooladipupo41@gmail.com>",
   "version": "0.0.1",
   "scripts": {
-    "start:client": "cd client && npm run start",
-    "start:api": "cd api && npm run start",
-    "start": "npm run start:api && npm run start:client",
-    "build:client": "cd client && npm run build",
-    "build:api": "cd api && npm run build",
-    "build": "concurrently \"npm run build:api\" \"npm run build:client\"",
-    "dev:client": "cd client && npm run dev",
-    "dev:api": "cd api && npm run dev",
-    "dev": "concurrently \"npm run dev:api\" \"npm run dev:client\"",
+    "export": "cd client && yarn export",
+    "premove": "yarn export",
+    "move": "node move.js",
+    "prestart": "yarn move",
+    "start": "yarn start:api",
+    "start:api": "cd api && yarn start",
+    "start:client": "cd client && yarn start",
+    "start:b": "yarn start:api && yarn start:client",
+    "dev:client": "cd client && yarn dev",
+    "dev:api": "cd api && yarn dev",
+    "dev": "concurrently \"yarn dev:api\" \"yarn dev:client\"",
     "install": "concurrently \"cd api && yarn --ignore-engines\" \"cd client && yarn --ignore-engines\""
   },
   "dependencies": {
+    "fs-extra": "^7.0.0"
   },
   "devDependencies": {
     "concurrently": "^3.4.0"
