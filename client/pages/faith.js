@@ -2,9 +2,8 @@ import React, { Fragment } from "react";
 import { Container } from "reactstrap";
 import Layout from "../components/Layout";
 import BlankSection from "../components/Home/BlankSection";
-import MediaFullwidth from "../components/Home/MediaFullwidth";
+// import MediaFullwidth from "../components/Home/MediaFullwidth";
 import FullwidthCaption from "../components/Home/FullwidthCaption";
-import BlogSection from "../components/Home/BlogSection";
 import BlogGridSection from "../components/Home/BlogGridSection";
 
 const faith = (
@@ -47,9 +46,9 @@ const Faith = () => (
     <Layout header={faith} about="logo2">
       <FullwidthCaption />
       <BlogGridSection />
+      {/* <BlogGridSection />
       <BlogGridSection />
-      <BlogGridSection />
-      <BlogGridSection />
+      <BlogGridSection /> */}
       <BlankSection />
     </Layout>
   </Fragment>

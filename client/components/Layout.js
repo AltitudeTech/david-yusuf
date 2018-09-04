@@ -1,13 +1,23 @@
 import { Fragment } from "react";
 import { Container } from "reactstrap";
+import { withRouter } from "next/router";
+
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 // import SvgLoader from 'bv-react-svgloader'
 
-export default props => (
+const darkmenu = props => {
+  const { router : { pathname } } = props;
+  if (pathname === '/about' || pathname === '/faith') {
+    return "dark-wrapper";
+  }
+  return '';
+}
+
+export default withRouter(props => (
   <Fragment>
     <div className="header-wrapper">
-      <div className="navbar-wrapper">
+      <div className={`navbar-wrapper ${darkmenu(props)}`}>
         <Container>
           <Navbar about={props.about} />
         </Container>
@@ -27,6 +37,9 @@ export default props => (
         left: 0;
         z-index: 10;
       }
+      .dark-wrapper{
+        background-color: rgba(0, 0, 0, 0.46);
+      }
     `}</style>
   </Fragment>
-);
+));

@@ -31,7 +31,8 @@ class NavBar extends Component {
     });
   };
 
-  logoname = this.props.about || "logo1";
+  logoname = "logo1";
+  // logoname = this.props.about || "logo1";
   activeMenu = menu =>
     menu == this.props.router.pathname ? "menu-active" : "";
 
@@ -58,6 +59,11 @@ class NavBar extends Component {
             ))}
           </Nav>
         </Collapse>
+        <style jsx>{`
+          .nav a {
+            color: black !important;
+          }
+        `}</style>
       </Navbar>
     );
   }

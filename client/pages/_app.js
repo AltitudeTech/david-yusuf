@@ -1,7 +1,19 @@
 import React from 'react'
 import App, { Container } from 'next/app'
-import Router from 'next/router'
+import ApolloClient from "apollo-boost"
+import { ApolloProvider } from "react-apollo"
+// import { createHttpLink } from 'apollo-link-http'
+import fetch from 'isomorphic-unfetch'
+// import Router from 'next/router'
 // import { initGA, logPageView } from '../utils/analytics'
+
+if (!process.browser) {
+  global.fetch = fetch
+}
+
+const client = new ApolloClient({
+  uri: process.env.BACKEND_URL
+});
 
 export default class MyApp extends App {
   static async getInitialProps ({ Component, router, ctx }) {
@@ -21,10 +33,13 @@ export default class MyApp extends App {
   }
 
   render () {
+    console.log(process.env.BACKEND_URL);
     const { Component, pageProps } = this.props
     return (
       <Container>
-        <Component {...pageProps} />
+        <ApolloProvider client={client}>
+          <Component {...pageProps} />
+        </ApolloProvider>
       </Container>
     )
   }
