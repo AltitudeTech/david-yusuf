@@ -5,8 +5,6 @@ const keystone = require('keystone');
 // const chai = require('chai');
 const Cryptr = require('cryptr');
 
-const { checkEnv } = require('../utils/initApp');
-
 keystone.init({
   name: 'Keystonejs-graphql-compose-boilerplate',
   's3 config': {},
@@ -14,12 +12,6 @@ keystone.init({
 
 
 keystone.import('../models');
-
-checkEnv([
-  'JWT_SECRET',
-  'PASSWORD_VERSION_SECRET',
-  'ACTIVATION_JWT_SECRET',
-]);
 
 keystone.pvCryptr = new Cryptr(process.env.PASSWORD_VERSION_SECRET);
 
@@ -36,6 +28,10 @@ before(async () => {
   });
   global.__MONGO_URI__ = await mongod.getConnectionString();
   global.__MONGO_DB_NAME__ = await mongod.getDbName();
+  global.__COUNTERS__ = {
+    posts: 0,
+    postCategories: 0,
+  };
 });
 
 after(async () => {
