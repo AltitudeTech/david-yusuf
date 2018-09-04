@@ -3,6 +3,10 @@ const bodyParser = require('body-parser');
 const { graphqlExpress, graphiqlExpress } = require('apollo-server-express');
 // const { ApolloServer } = require('apollo-server-express');
 
+// const path = require('path')
+const serveStatic = require('serve-static');
+const history = require('connect-history-api-fallback');
+
 // const schema = require('../graphql/schema-compose');
 const schema = require('../graphql/schema');
 const getContext = require('../graphql/lib/getContext');
@@ -26,7 +30,10 @@ module.exports = (app) => {
 
   // Views
   app.get('/admin', (req, res) => { res.redirect('/keystone'); });
-  app.get('/', (req, res) => { res.redirect('/keystone'); });
+  // app.get('/', (req, res) => { res.redirect('/keystone'); });
+
+  app.use(history({ verbose: true }));
+  app.use(serveStatic(`${__dirname}/client`));
 
   // routes for testing in development
   // if (process.env.NODE_ENV === 'development') {
