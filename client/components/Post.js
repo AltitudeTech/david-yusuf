@@ -35,7 +35,7 @@ export default props => {
       .post-image {
         height: 250px;
         ${image ? `background-image: url('${image.url}');` : ''}
-        background-size: contain;
+        background-size: cover;
         background-color: gray;
         opacity: 1 !important;
         -webkit-transition: opacity .3s ease-out;
