@@ -73,7 +73,7 @@ describe('posts Query', () => {
     const result = await graphql(schema, query, rootValue, context, variables);
 
     expect(result.data.posts.items[0]._id).to.equal(`${post._id}`);
-    expect(result.data.posts.count.length).to.equal(1);
+    expect(result.data.posts.count).to.equal(1);
     expect(result.errors).to.be.undefined;
   });
 });
