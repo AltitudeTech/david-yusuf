@@ -4,7 +4,6 @@ const { graphqlExpress, graphiqlExpress } = require('apollo-server-express');
 // const { ApolloServer } = require('apollo-server-express');
 
 const serveStatic = require('serve-static');
-const history = require('connect-history-api-fallback');
 
 const schema = require('../graphql/schema');
 const getContext = require('../graphql/lib/getContext');
@@ -32,9 +31,7 @@ module.exports = (app) => {
 
   // Views
   app.get('/admin', (req, res) => { res.redirect('/keystone'); });
-  // app.get('/', (req, res) => { res.redirect('/keystone'); });
-
-  app.use(history({ verbose: true }));
+  // Client App
   app.use(serveStatic(`${__dirname}/client`));
 
 };
