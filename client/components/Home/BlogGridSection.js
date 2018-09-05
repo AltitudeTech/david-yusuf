@@ -10,6 +10,7 @@ import Section from '../Section'
 import Post from '../Post'
 import LoadingPosts from "../LoadingPosts";
 import PostsError from "../PostsError";
+import PostsEmpty from "../PostsEmpty";
 
 export default class extends Component {
   state = {
@@ -39,6 +40,8 @@ export default class extends Component {
                 }
 
                 const { items } = posts;
+
+                if (items.length === 0) return <PostsEmpty />;
 
                 return (items.length > 0 ? <div className="text-center">
                   <Row>

@@ -8,6 +8,7 @@ import Button from '../Button'
 import Section from '../Section'
 import Post from '../Post'
 import PostsError from "../PostsError";
+import PostsEmpty from "../PostsEmpty";
 import LoadingPosts from "../LoadingPosts";
 
 export default props => (
@@ -31,6 +32,8 @@ export default props => (
                 }
                 // console.log(posts);
                 const { items } = posts;
+
+                if (items.length === 0) return <PostsEmpty />;
 
                 return  <Fragment>
                   <Row>
