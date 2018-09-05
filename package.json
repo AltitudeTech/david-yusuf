@@ -19,7 +19,7 @@
     "export": "cd client && yarn export",
     "premove": "yarn export",
     "move": "node move.js",
-    "heroku-postbuild": "yarn move",
+    "heroku-postbuild": "yarn move"
   },
   "dependencies": {
     "fs-extra": "^7.0.0"
