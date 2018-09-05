@@ -18,7 +18,9 @@
     "dev:client": "cd client && yarn dev",
     "dev:api": "cd api && yarn dev",
     "dev": "concurrently \"yarn dev:api\" \"yarn dev:client\"",
-    "install": "concurrently \"cd api && yarn --ignore-engines\" \"cd client && yarn --ignore-engines\""
+    "install:api": "cd api && yarn install",
+    "install:client": "cd client && yarn install",
+    "install": "yarn install:api && yarn install:client"
   },
   "dependencies": {
     "fs-extra": "^7.0.0"
