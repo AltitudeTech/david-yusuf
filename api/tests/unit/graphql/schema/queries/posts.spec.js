@@ -14,26 +14,37 @@ const { expect } = chai;
 const GET_POSTS_QUERY = `
 {
   posts {
-    _id
-    title
-    state
-    author
-    publishedDate
-    slug
-    content {
-      brief
-      extended
+    count
+    pageInfo {
+      currentPage
+      perPage
+      pageCount
+      itemCount
+      hasNextPage
+      hasPreviousPage
     }
-    image {
-      public_id
-      version
-      signature
-      format
-      resource_type
-      url
-      width
-      height
-      secure_url
+    items {
+      _id
+      title
+      state
+      author
+      publishedDate
+      slug
+      content {
+        brief
+        extended
+      }
+      image {
+        public_id
+        version
+        signature
+        format
+        resource_type
+        url
+        width
+        height
+        secure_url
+      }
     }
   }
 }
@@ -61,7 +72,8 @@ describe('posts Query', () => {
 
     const result = await graphql(schema, query, rootValue, context, variables);
 
-    expect(result.data.posts[0]._id).to.equal(`${post._id}`);
+    expect(result.data.posts.items[0]._id).to.equal(`${post._id}`);
+    expect(result.data.posts.count.length).to.equal(1);
     expect(result.errors).to.be.undefined;
   });
 });

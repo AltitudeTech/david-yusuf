@@ -13,11 +13,13 @@ const { expect } = chai;
 // language=GraphQL
 const POST_CATEGORIES_QUERY = `
 {
-  posts{
-    categories{
-      _id
-      name
-      key
+  posts {
+    items {
+      categories{
+        _id
+        name
+        key
+      }
     }
   }
 }
@@ -48,7 +50,7 @@ describe('PostCategory relationship query', () => {
 
     const result = await graphql(schema, query, rootValue, context, variables);
 
-    const { categories } = result.data.posts[0];
+    const { categories } = result.data.posts.items[0];
 
     expect(categories.length).to.equal(2);
     expect(categories[0]._id).to.equal(`${postCategory._id}`);
@@ -70,7 +72,7 @@ describe('PostCategory relationship query', () => {
 
     const result = await graphql(schema, query, rootValue, context, variables);
 
-    expect(result.data.posts[0].categories.length).to.equal(0);
+    expect(result.data.posts.items[0].categories.length).to.equal(0);
     expect(result.errors).to.be.undefined;
   });
 });
