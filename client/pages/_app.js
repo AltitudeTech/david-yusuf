@@ -33,7 +33,7 @@ export default class MyApp extends App {
   }
 
   render () {
-    console.log(process.env.BACKEND_URL);
+    // console.log(process.env.BACKEND_URL);
     const { Component, pageProps } = this.props
     return (
       <Container>
