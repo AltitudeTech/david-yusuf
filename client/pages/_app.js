@@ -12,7 +12,7 @@ if (!process.browser) {
 }
 
 const client = new ApolloClient({
-  uri: process.env.BACKEND_URL
+  uri: process.env.BACKEND_URL || '/graphql'
 });
 
 export default class MyApp extends App {
