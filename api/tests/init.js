@@ -3,7 +3,6 @@ require('dotenv').load();
 
 const keystone = require('keystone');
 // const chai = require('chai');
-const Cryptr = require('cryptr');
 
 keystone.init({
   name: 'Keystonejs-graphql-compose-boilerplate',
@@ -12,8 +11,6 @@ keystone.init({
 
 
 keystone.import('../models');
-
-keystone.pvCryptr = new Cryptr(process.env.PASSWORD_VERSION_SECRET);
 
 // chai.should();
 
