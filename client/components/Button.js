@@ -1,19 +1,22 @@
 import { Fragment } from 'react'
+import Link from 'next/link'
 
-export default props => {
+export default ({ text = '', dark = false, href}) => {
   let color = '#fff';
   let borderColor = '#fff';
   let backgroundColor = 'transparent';
   let hoverColor = '#1d1d1d';
   let hoverBackgroundColor = '#fff';
-  if (props.dark) {
+  if (dark) {
     color = '#1d1d1d';
     borderColor = '#1d1d1d';
     hoverColor = '#fff';
     hoverBackgroundColor = '#1d1d1d';
   }
   return <Fragment>
-    <a>{props.text}</a>
+    <Link href={href}>
+      <a>{text}</a>
+    </Link>
     <style jsx>{`
       a {
         border-color: ${borderColor} !important;

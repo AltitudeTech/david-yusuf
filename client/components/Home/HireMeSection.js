@@ -12,7 +12,7 @@ export default () => (
         <div className="text">
           <span>consectetur adipiscing elit, sed do eiusmod tempor</span>
           <h1 className="title">Lorem ipsum dolor<br/> sit amet!</h1>
-          <Button text='Contact Me Today'/>
+          <Button text='Contact Me Today' href="/contact"/>
         </div>
       </Container>
     </div>
