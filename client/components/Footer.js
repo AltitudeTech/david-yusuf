@@ -29,7 +29,7 @@ export default () => {
       <nav>
         <div className="Footer-nav-group">
           {socialLinks.map(({img, link}, i) => (
-            <a href={link} key={i} className="social-item">
+            <a href={link} key={i} className="social-item" target="_blank" rel='noreferrer noopener'>
               <SvgLoader src={img}/>
             </a>
           ))}
