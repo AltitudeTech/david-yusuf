@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-// import { Query } from 'react-apollo';
 // import Link from "next/link";
 
 // import Head from '../components/head'
@@ -8,10 +7,6 @@ import HeroSection from "../components/Home/HeroSection";
 import HireMeSection from "../components/Home/HireMeSection";
 import BlogSection from "../components/Home/BlogSection";
 import BlankSection from "../components/Home/BlankSection";
-// import LoadingPosts from "../components/LoadingPosts";
-// import PostsError from "../components/PostsError";
-
-// import { ALL_POSTS_QUERY } from '../lib/graphql/queries'
 
 const home = (<div className="bg-home page-header">
                 <div className="header-container">
@@ -63,26 +58,6 @@ const Home = () => (
     <Layout header={home}>
       <HeroSection />
       <HireMeSection />
-      {/* <Query
-        query={ALL_POSTS_QUERY}
-        variables={{page: 1}}
-        >{
-        ({data: {posts}, loading, error}) => {
-          if (loading) return <LoadingPosts />
-          if (error) {
-            console.log(error);
-            return <PostsError />
-          }
-          // console.log(posts);
-          const { items } = posts;
-
-          return <PostsError/>
-
-          // return items.length > 0 ? <BlogSection posts={items} limit={3}/> : null
-          // return null
-          // return <LoadingPosts />
-        }
-      }</Query> */}
       <BlogSection />
       <BlankSection />
     </Layout>
