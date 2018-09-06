@@ -5,14 +5,23 @@ import BlankSection from "../components/Home/BlankSection";
 // import MediaFullwidth from "../components/Home/MediaFullwidth";
 import FullwidthCaption from "../components/Home/FullwidthCaption";
 import BlogGridSection from "../components/Home/BlogGridSection";
+import BibleImage from "../components/BibleImage";
+
 
 const faith = (
   <div className="bg-home page-header">
     <Container>
-      <h2>FAITH</h2>
+      <div className="title-wrapper">
+        <BibleImage />
+        <h2>FAITH</h2>
+      </div>
     </Container>
     <style jsx>
       {`
+        .title-wrapper {
+          display: flex;
+          padding-top: 250px;
+        }
         .bg-home {
           background-image: url("/static/images/faith.svg");
           height: 65vh;
@@ -32,7 +41,7 @@ const faith = (
         h2 {
           color: #000;
           text-transform: uppercase;
-          margin-top: 250px;
+          // margin-top: 250px;
           font-weight: bold;
           font-size: 4em;
         }
