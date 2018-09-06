@@ -51,7 +51,7 @@ class NavBar extends Component {
             {links.map(({ key, href, label }) => (
               <NavItem key={key}>
                 <Link href={href} prefetch>
-                  <NavLink className={`${this.activeMenu(href)}`}>
+                  <NavLink href={href} className={`${this.activeMenu(href)}`}>
                     {label}
                   </NavLink>
                 </Link>
