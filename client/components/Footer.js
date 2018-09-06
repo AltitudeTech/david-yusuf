@@ -10,6 +10,10 @@ const socialLinks = [
   {img: '/static/images/social/twitter.svg', link: 'https://twitter.com/'},
   {img: '/static/images/social/youtube.svg', link: 'https://youtube.com/'}
 ]
+const bottomLinks = [
+  {text: 'Terms of Service', href: '/terms-of-service'},
+  {text: 'Privacy Policy', href: '/privacy-policy'},
+]
 export default () => {
   return <footer className='Footer'>
     <Container>
@@ -33,8 +37,11 @@ export default () => {
       </nav>
       <p>2018 David Yusuf. All rights reserved. </p>
       <nav>
-        <a className="nav-item">Terms of Service</a>
-        <a className="nav-item">Privacy Policy</a>
+        {bottomLinks.map(({text, href}, i) => (
+          <Link href={href} key={i}>
+            <a className="nav-item">{text}</a>
+          </Link>
+        ))}
       </nav>
     </Container>
     <style jsx>{`
