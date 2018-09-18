@@ -2,31 +2,25 @@ import { Container, Row, Col } from "reactstrap";
 
 import Section from "../Section";
 
-export default () => (
+export default ({ experience : {
+  logo,
+  name,
+  url,
+  subText,
+  description
+  }
+}) => (
   <Section>
     <div className="hero">
       <Container>
         <Row>
+          {/* <Col md={2}>
+          </Col> */}
           <Col md={12}>
-            <h2>Lorem ipsum dolor sit amet consectetur</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum
-            </p>
+            <img src={logo} width="180px"/>
+            <h2 className="mb-0">Lorem ipsum dolor sit amet consectetur</h2>
+            <small style={{color: 'gold'}}>{subText}</small>
+            <p>{description}</p>
           </Col>
         </Row>
       </Container>

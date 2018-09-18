@@ -8,13 +8,21 @@ import Section from '../Section'
 import expertise from '../../expertise';
 
 export default class Form extends Component {
-  state = { name: '', phone: '', email: '', hint: '' };
+  state = {
+    name: '',
+    phone: '',
+    email: '',
+    hint: '',
+    // keys : {...expertise.map(item => {[item.key] : false})}
+  };
+
 
   handleChange = (name, value) => {
     this.setState({...this.state, [name]: value});
   };
 
   render () {
+    // console.log(this.state);
     return (
   <Section>
       <Container>
@@ -37,9 +45,9 @@ export default class Form extends Component {
           rows={4}
           value={this.state.name}
           onChange={this.handleChange.bind(this, 'name')} /> */}
-          {expertise.map((item, i)=><Checkbox
-            className="expertise-check"
-            key={i}
+        {expertise.map(item => <Checkbox
+          className="expertise-check"
+          key={item.key}
           checked={true}
           label={item.title}
           // onChange={this.handleChange.bind(this, 'check1')}
@@ -54,7 +62,7 @@ export default class Form extends Component {
         color: black !important;
       }
       .form-input span {
-        border: 0.2px black solid;
+        border: 0.6px black solid;
       }
       .form-input span::after {
         background-color: black;
