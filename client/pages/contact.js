@@ -6,10 +6,7 @@ import {Container} from "reactstrap";
 
 // import Head from '../components/head'
 import Layout from "../components/Layout";
-import HeroSection from "../components/Home/HeroSection";
-import HireMeSection from "../components/Home/HireMeSection";
-import BlogSection from "../components/Home/BlogSection";
-import BlankSection from "../components/Home/BlankSection";
+import ContactForm from "../components/ContactForm";
 
 const contact = (<div className="bg-home page-header">
                     <Container>
@@ -19,7 +16,7 @@ const contact = (<div className="bg-home page-header">
                         .bg-home {
                             background-image:url('/static/images/contactbg.jpg') ;
                             background-size: contain ;
-                            height: 85vh;
+                            height: 80vh;
                             width: 100%;
                           }
                         .page-header {
@@ -50,10 +47,7 @@ const contact = (<div className="bg-home page-header">
 const Contact = () => (
   <Fragment>
     <Layout header={contact}>
-      <HeroSection />
-      <HireMeSection />
-      <BlogSection />
-      <BlankSection />
+      <ContactForm />
     </Layout>
   </Fragment>
 );

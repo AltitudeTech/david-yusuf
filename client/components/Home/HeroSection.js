@@ -5,11 +5,11 @@ import Section from '../Section'
 export default () => (
   <Section>
     <Container>
-      <div className="hero">
+      {/* <div className="hero">
         <h2 className="title">MY TALENT IS A</h2>
         <h3 className="subtitle">GIFT FROM GOD</h3>
       </div>
-      <br />
+      <br /> */}
       <Row>
         <Col md={6}>
           <p>
@@ -54,24 +54,24 @@ export default () => (
       </Row>
     </Container>
     <style jsx>{`
-      .hero {
-        width: 100%;
-        color: #333;
-      }
-      .title {
-        width: 100%;
-        font-weight : bold ;
-        line-height: 1.15;
-        font-size:3em ;
-        text-align: center;
-      }
-      .subtitle {
-        width: 100%;
-        line-height: 1.15;
-        font-weight : bold ;
-        font-size: 2em ;
-        text-align: center;
-      }
+      // .hero {
+      //   width: 100%;
+      //   color: #333;
+      // }
+      // .title {
+      //   width: 100%;
+      //   font-weight : bold ;
+      //   line-height: 1.15;
+      //   font-size:3em ;
+      //   text-align: center;
+      // }
+      // .subtitle {
+      //   width: 100%;
+      //   line-height: 1.15;
+      //   font-weight : bold ;
+      //   font-size: 2em ;
+      //   text-align: center;
+      // }
       .p {
         margin: 0;
         padding: 12px 0 0;

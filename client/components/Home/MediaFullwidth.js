@@ -2,98 +2,52 @@ import { Container, Row, Col } from "reactstrap";
 
 import Section from "../Section";
 
+const list = [
+  {
+    title: 'Talent Identification, Aquisition and Development'
+  },
+  {
+    title: 'Strategic Human Corprate Consulting'
+  },
+  {
+    title: 'Executive Search Assesment and Selection'
+  },
+  {
+    title: 'Transformative Career and Executive Coaching'
+  },
+  {
+    title: 'Human Resource Analytics, '
+  },
+]
+
 export default () => (
   <Section>
     <div className="hero">
       <Container>
-        <Row>
-          <Col md={12}>
-            <h2>Lorem ipsum dolor sit amet consectetur</h2>
-          </Col>
-          <Col md={4}>
-            <div className="post-item">
-              <div className="post-image" />
-            </div>
-          </Col>
-          <Col md={8}>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum
-            </p>
-            <a href="#">Read More</a>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={12}>
-            <h2>Lorem ipsum dolor sit amet consectetur</h2>
-          </Col>
-          <Col md={4}>
-            <div className="post-item">
-              <div className="post-image" />
-            </div>
-          </Col>
-          <Col md={8}>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum
-            </p>
-            <a href="#">Read More</a>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={12}>
-            <h2>Lorem ipsum dolor sit amet consectetur</h2>
-          </Col>
-          <Col md={4}>
-            <div className="post-item">
-              <div className="post-image" />
-            </div>
-          </Col>
-          <Col md={8}>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum
-            </p>
-            <a href="#">Read More</a>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={12}>
-            <h2>Lorem ipsum dolor sit amet consectetur</h2>
-          </Col>
-          <Col md={4}>
-            <div className="post-item">
-              <div className="post-image" />
-            </div>
-          </Col>
-          <Col md={8}>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum
-            </p>
-            <a href="#">Read More</a>
-          </Col>
-        </Row>
+        {list.map((item, i)=>(
+          <Row key={i}>
+            <Col md={12}>
+              <h2>{item.title}</h2>
+            </Col>
+            <Col md={4}>
+              <div className="post-item">
+                <div className="post-image" />
+              </div>
+            </Col>
+            <Col md={8}>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum
+              </p>
+              <a href="#">Read More</a>
+            </Col>
+          </Row>
+        ))}
       </Container>
     </div>
     <style jsx>{`
