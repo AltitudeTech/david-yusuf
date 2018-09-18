@@ -4,6 +4,7 @@ import { Input } from 'react-toolbox/lib/input';
 import { Checkbox } from 'react-toolbox/lib/checkbox';
 
 import Section from '../Section'
+import Button from '../Button'
 
 import expertise from '../../expertise';
 
@@ -52,6 +53,10 @@ export default class Form extends Component {
           label={item.title}
           // onChange={this.handleChange.bind(this, 'check1')}
         />)}
+        <br />
+        <div style={{textAlign: 'center'}}>
+          <Button text='Submit' dark/>
+        </div>
       </Container>
     <style global jsx>{`
       .expertise-check div.checked__2vmMX {

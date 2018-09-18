@@ -45,7 +45,7 @@ export default ({ text = '', dark = false, href}) => {
         background-color: ${hoverBackgroundColor} !important;
       }
       a::after{
-        content : " U+25C6"  ;
+        content : " \u3009"  ;
         font-weight : bolder ;
         color : #DAA520 ;
       }
