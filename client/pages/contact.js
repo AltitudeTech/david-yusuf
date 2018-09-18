@@ -10,7 +10,7 @@ import ContactForm from "../components/ContactForm";
 
 const contact = (<div className="bg-home page-header">
                     <Container>
-                        <h2>Contact</h2>
+                        <h2>DROP US A LINE</h2>
                     </Container>
                     <style jsx>{`
                         .bg-home {
