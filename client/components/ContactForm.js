@@ -1,4 +1,4 @@
-import Input from 'react-toolbox/lib/input';
+// import Input from 'react-toolbox/lib/input';
 
 import Section from './Section'
 
@@ -10,9 +10,9 @@ export default () => (
         <h2 className="title">DROP US A LINE</h2>
       </div>
       <br />
-      <Input type='text' label='Name' name='name' maxLength={16} />
+      {/* <Input type='text' label='Name' name='name' maxLength={16} />
         <Input type='text' label='Disabled field' disabled />
-        <Input type='email' label='Email address' icon='email'/>
+        <Input type='email' label='Email address' icon='email'/> */}
     <style jsx>{`
       .hero {
         width: 100%;
