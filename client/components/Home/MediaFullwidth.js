@@ -7,16 +7,16 @@ const list = [
     title: 'Talent Identification, Aquisition and Development'
   },
   {
-    title: 'Strategic Human Corprate Consulting'
+    title: 'Strategic Human Capital Consulting'
   },
   {
-    title: 'Executive Search Assesment and Selection'
+    title: 'Executive Search, Assesment and Selection'
   },
   {
     title: 'Transformative Career and Executive Coaching'
   },
   {
-    title: 'Human Resource Analytics, '
+    title: 'Human Resource Analytics, Diversity and Inclusion'
   },
 ]
 
