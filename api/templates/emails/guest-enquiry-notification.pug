@@ -20,6 +20,9 @@ html
 		if enquiry.message
 			.text-larger !{enquiry.message}
 		if interests
-			p.text-larger Interests: #{interests}
+			p.text-larger Interests:
+			ul
+				each val in interests
+					li= val
 		p.text-muted Sent #{enquiry._.createdAt.format()}
 		p &nbsp;

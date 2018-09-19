@@ -55,7 +55,7 @@ Enquiry.schema.post('save', function () {
 
 Enquiry.schema.methods.stringifyInterests = function () {
   const enquiry = this;
-  return expertise.map(item => (enquiry[item.key] ? item.title : '')).filter(String).toString();
+  return expertise.map(item => (enquiry[item.key] ? item.title : '')).filter(String);
 };
 
 Enquiry.schema.methods.sendNotificationEmail = function () {
