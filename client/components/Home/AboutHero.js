@@ -13,7 +13,7 @@ export default () => (
           </Col>
           <Col md={7}>
             <div className="heroText">
-              <h2 className="title">My passions and personality</h2>
+              <h2 className="title">Lorem ipsum dolor sit</h2>
               <br />
               <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
               <p>

@@ -49,6 +49,7 @@ keystone.set('routes', require('./routes'));
 keystone.set('nav', {
   posts: ['Post', 'PostCategory'],
   admins: 'Admin',
+  enquiries: 'Enquiry',
 });
 
 // Configure cloudinary

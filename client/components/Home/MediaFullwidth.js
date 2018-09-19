@@ -1,9 +1,10 @@
 import { Container, Row, Col } from "reactstrap";
+import SvgLoader from 'bv-react-svgloader'
 
 import Section from "../Section";
 
-import expertise from '../../expertise';
-
+import expertise from '../../../expertise';
+// client\static\images\share.svg
 
 export default () => (
   <Section>
@@ -30,7 +31,8 @@ export default () => (
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum
               </p>
-              <a href="#">Read More</a>
+              {/* <a href="#"><img width="15px" src='/static/images/share.svg'/></a> */}
+              <a href="#">Share <img width="15px" src='/static/images/share.svg'/></a>
             </Col>
           </Row>
         ))}
@@ -48,7 +50,7 @@ export default () => (
         color: #333;
       }
       .post-item img {
-        border: 2px solid #DAA520;
+        border: 1px solid #cacaca;
       }
       // .post-image {
       //   height: 200px;

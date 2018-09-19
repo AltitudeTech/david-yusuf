@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 import Link from 'next/link'
 
-export default ({ text = '', dark = false, href, onClick }) => {
+export default ({ text = '', dark = false, href, onClick, type }) => {
   let color = '#fff';
   let borderColor = '#fff';
   let backgroundColor = 'transparent';
@@ -16,12 +16,12 @@ export default ({ text = '', dark = false, href, onClick }) => {
   return <Fragment>
     { href ?
       <Link href={href}>
-        <a onClick={onClick}>{text}</a>
+        <button onClick={onClick} type={type}>{text}</button>
       </Link>
-      : <a onClick={onClick}>{text}</a>
+      : <button onClick={onClick} type={type}>{text}</button>
     }
     <style jsx>{`
-      a {
+      button {
         border-color: ${borderColor} !important;
         color: ${color} !important;
         background-color: ${backgroundColor} !important;
@@ -43,11 +43,11 @@ export default ({ text = '', dark = false, href, onClick }) => {
         -o-transition: 0.1s background-color linear, 0.1s color linear;
         transition: 0.1s background-color linear, 0.1s color linear;
       }
-      a:hover{
+      button:hover{
         color: ${hoverColor} !important;
         background-color: ${hoverBackgroundColor} !important;
       }
-      a::after{
+      button::after{
         content : " \u3009"  ;
         font-weight : bolder ;
         color : #DAA520 ;

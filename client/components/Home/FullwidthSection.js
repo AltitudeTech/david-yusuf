@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "reactstrap";
+import { Container } from "reactstrap";
 
 import Section from "../Section";
 
@@ -13,19 +13,20 @@ export default ({ experience : {
   <Section>
     <div className="hero">
       <Container>
-        <Row>
-          {/* <Col md={2}>
-          </Col> */}
-          <Col md={12}>
-            <img src={logo} width="180px"/>
-            <h2 className="mb-0">Lorem ipsum dolor sit amet consectetur</h2>
-            <small style={{color: 'gold'}}>{subText}</small>
-            <p>{description}</p>
-          </Col>
-        </Row>
+          <h2 className="mb-1"
+            // style={{color: 'gold'}}
+            >{subText}</h2>
+        <div>
+          <img className="c-logo" src={logo} width="180px"/>
+          <p className="mt-3">{description}</p>
+        </div>
       </Container>
     </div>
     <style jsx>{`
+      .c-logo {
+        float: left;
+        margin-right: 20px;
+      }
       .hero {
         width: 100%;
         color: #333;

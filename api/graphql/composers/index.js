@@ -6,9 +6,11 @@ const { composeWithMongoose } = require('graphql-compose-mongoose');
 */
 const Post = keystone.list('Post').model;
 const PostCategory = keystone.list('PostCategory').model;
+const Enquiry = keystone.list('Enquiry').model;
 
 const PostTC = composeWithMongoose(Post);
 const PostCategoryTC = composeWithMongoose(PostCategory);
+const EnquiryTC = composeWithMongoose(Enquiry);
 
 /**
 * Exports
@@ -16,4 +18,5 @@ const PostCategoryTC = composeWithMongoose(PostCategory);
 module.exports = {
   PostTC,
   PostCategoryTC,
+  EnquiryTC,
 };

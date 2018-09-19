@@ -7,9 +7,13 @@ const { schemaComposer } = require('graphql-compose');
 require('../relationships');
 
 const queries = require('./queries');
+const mutations = require('./mutations');
 
 // Add fields and resolvers to rootQuery
 schemaComposer.Query.addFields(queries);
+
+// Add fields and resolvers to rootMutation
+schemaComposer.Mutation.addFields(mutations);
 
 const schema = schemaComposer.buildSchema();
 module.exports = schema;
