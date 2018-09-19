@@ -52,6 +52,7 @@ export default class Form extends Component {
         {(createEnquiry, { loading }) => (
           <Section>
             <Container>
+              {this.props.showHeader && <h2>Contact Us</h2>}
               <form
                 id="contact-form"
                 onSubmit={e => {
