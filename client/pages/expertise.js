@@ -3,6 +3,7 @@ import {Container} from "reactstrap";
 import Layout from "../components/Layout";
 import BlankSection from "../components/Home/BlankSection";
 import MediaFullwidth from "../components/Home/MediaFullwidth";
+import ContactForm from "../components/ContactForm";
 
 const expertise = (<div className="bg-home page-header">
                         <Container>
@@ -22,6 +23,7 @@ const expertise = (<div className="bg-home page-header">
                             overflow: hidden;
                             position: relative;
                             align-items: center;
+                            background-color: black;
                             background-size: cover;
                             background-position: center center;
                           }
@@ -41,7 +43,8 @@ const Expertise = () => (
   <Fragment>
     <Layout header={expertise}>
       <MediaFullwidth />
-      <BlankSection />
+      <ContactForm showHeader/>
+      {/* <BlankSection /> */}
     </Layout>
   </Fragment>
 );

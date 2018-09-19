@@ -25,6 +25,9 @@ const home = (<div className="bg-home page-header">
                   </div>
                 </div>
                 <style jsx>{`
+                  .page-header {
+                    background-color: black;
+                  }
                   .header-container {
                     width: 100%;
                     height: 85vh;
