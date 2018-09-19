@@ -15,18 +15,18 @@ export default () => (
       <Container>
         <Row>
           <Col md={12}>
-            <h1 className="title">My Latest Blog</h1>
-            <h3 className="desc">
+            <h2 className="title">My Latest Blog</h2>
+            <h4 className="desc">
               Every human being is created in God’s own image, and uniquely blessed with talent(s). This fundamental
               biblical truth has no racial or tribal limitations. Safe to say, that whatever talent we are blessed with has
               eternal purpose and for our destiny, in God’s own making.
-            </h3>
-            {list.map((item, i)=><h3
+            </h4>
+            {list.map((item, i)=><h4
                key={i}
                className="list-item"
                >
               {item}
-            </h3>)}
+            </h4>)}
           </Col>
         </Row>
       </Container>
