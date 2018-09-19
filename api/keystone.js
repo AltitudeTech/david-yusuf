@@ -55,13 +55,13 @@ keystone.set('nav', {
 // Configure cloudinary
 // keystone.set('cloudinary config', process.env.CLOUDINARY_URL);
 
-// keystone.set('brandDetails', {
-//   brand: keystone.get('brand') || 'Youth Empowerment Zone',
-//   mailAddress: '22 Kumasi Cresent, Wuse 2, Abuja',
-//   homepageUrl: process.env.FRONT_END_URL,
-//   phone: '+234.818.855.5611',
-//   emailLogoUrl: 'http://www.mycareerchoice.global/static/images/mcclogo-text-dark.png',
-// });
+keystone.set('brandDetails', {
+  brand: keystone.get('brand'),
+  mailAddress: '22 Kumasi Cresent, Wuse 2, Abuja',
+  homepageUrl: 'http://www.davidyusuf.com',
+  phone: '+234.818.855.5611',
+  emailLogoUrl: 'http://www.davidyusuf.com/static/images/logo-dark.png',
+});
 
 mailgunUtils.checkMailgun();
 // Start Keystone to connect to your database and initialise the web server
