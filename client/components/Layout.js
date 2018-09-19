@@ -8,7 +8,7 @@ import Footer from "./Footer";
 
 const darkmenu = props => {
   const { router : { pathname } } = props;
-  if ( pathname === '/about' || pathname === '/faith'
+  if ( pathname === '/about' || pathname === '/faith' || pathname === '/contact'
   || pathname === '/privacy-policy' || pathname === '/terms-of-service' ) {
     return "dark-wrapper";
   }

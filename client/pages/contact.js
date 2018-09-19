@@ -14,7 +14,7 @@ const contact = (<div className="bg-home page-header">
                     </Container>
                     <style jsx>{`
                         .bg-home {
-                            background-image:url('/static/images/contactbg.jpg') ;
+                            background-image:url('/static/images/contact-banner.jpg') ;
                             background-size: contain ;
                             height: 80vh;
                             width: 100%;
@@ -32,11 +32,11 @@ const contact = (<div className="bg-home page-header">
                             background-position: center center;
                           }
                           h2{
-                            color : #fff ;
+                            color : black ;
                             text-transform: uppercase ;
-                            text-align: right ;
+                            text-align: left ;
                             font-weight : bold ;
-                            margin-top : 250px ;
+                            margin-top : 350px ;
                             margin-bottom : 0 ;
                             font-size : 4em ;
                           }

@@ -23,7 +23,7 @@ const faith = (
           padding-top: 250px;
         }
         .bg-home {
-          background-image: url("/static/images/faith.svg");
+          background-image: url("/static/images/blog-banner.jpg");
           height: 65vh;
           width: 100%;
         }
