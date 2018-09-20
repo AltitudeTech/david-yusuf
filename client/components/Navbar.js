@@ -38,7 +38,7 @@ class NavBar extends Component {
 
   render() {
     return (
-      <Navbar style={{ marginTop: "20px" }} light expand="md">
+      <Navbar style={{ marginTop: "20px", zIndex: "10" }} light expand="md">
         <NavbarBrand href="/">
           <SvgLoader
             src={`/static/images/${this.logoname}.svg`}

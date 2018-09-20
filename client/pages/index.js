@@ -48,7 +48,7 @@ const home = (<div className="bg-home page-header">
 
                   video {
                     position: absolute;
-                    z-index: -1;
+                    // z-index: -1;
                     opacity: 1;
                     width: 100%;
                   }
