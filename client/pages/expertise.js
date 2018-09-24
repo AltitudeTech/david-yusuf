@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import {Container} from "reactstrap";
 import Layout from "../components/Layout";
-import BlankSection from "../components/Home/BlankSection";
+// import BlankSection from "../components/Home/BlankSection";
 import MediaFullwidth from "../components/Home/MediaFullwidth";
 import ContactForm from "../components/ContactForm";
 
