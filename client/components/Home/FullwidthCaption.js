@@ -16,9 +16,10 @@ export default () => (
         <Row>
           <Col md={12}>
             <h2 className="title">My Latest Blog</h2>
-            {/* <p className="desc">
-
-            </p> */}
+            <p className="pb-20">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
             {/* <h4 className="desc">
               Every human being is created in God’s own image, and uniquely blessed with talent(s). This fundamental
               biblical truth has no racial or tribal limitations. Safe to say, that whatever talent we are blessed with has

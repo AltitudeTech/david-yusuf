@@ -44,7 +44,7 @@ export default props => (
                     ))}
                   </Row>
                   <br />
-                  <Button dark text='View More Posts ' href="/faith"/>
+                  <Button dark text='View More Posts ' href="/blog"/>
                 </Fragment>
                 }
               }</Query>

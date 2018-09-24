@@ -8,7 +8,7 @@ import BlogGridSection from "../components/Home/BlogGridSection";
 // import BibleImage from "../components/BibleImage";
 
 
-const faith = (
+const blog = (
   <div className="bg-home page-header">
     <Container>
       <div className="title-wrapper">
@@ -52,7 +52,7 @@ const faith = (
 
 const Faith = () => (
   <Fragment>
-    <Layout header={faith} about="logo2">
+    <Layout header={blog} about="logo2">
       <FullwidthCaption />
       <BlogGridSection />
       {/* <BlogGridSection />
