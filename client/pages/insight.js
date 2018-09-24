@@ -13,7 +13,7 @@ const blog = (
     <Container>
       <div className="title-wrapper">
         {/* <BibleImage /> */}
-        <h2>BLOG</h2>
+        <h2>INSIGHT</h2>
       </div>
     </Container>
     <style jsx>

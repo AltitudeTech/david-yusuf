@@ -24,6 +24,8 @@ client/build
 client/dist
 client/.next
 client/out
+/.next
+package.json
 
 # misc
 .DS_Store

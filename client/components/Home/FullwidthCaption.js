@@ -15,7 +15,7 @@ export default () => (
       <Container>
         <Row>
           <Col md={12}>
-            <h2 className="title">My Latest Blog</h2>
+            <h2 className="title">My Latest Insight</h2>
             <p className="pb-20">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -37,7 +37,7 @@ export default () => (
     </div>
     <style jsx>{`
       .title {
-        text-align:center;
+        text-align: center;
         padding-bottom: 20px;
       }
       // .desc {
@@ -55,7 +55,7 @@ export default () => (
       .hero {
         width: 100%;
         color: #333;
-        text-align:left ;
+        text-align: left;
       }
     `}</style>
   </Section>
