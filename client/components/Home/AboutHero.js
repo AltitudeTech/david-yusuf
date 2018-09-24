@@ -13,21 +13,27 @@ export default () => (
           </Col>
           <Col md={7}>
             <div className="heroText">
-              <h2 className="title">Lorem ipsum dolor sit</h2>
+              {/* <h4 className="title">The person born with a talent they are meant to use will find their greatest happiness in using it</h4> */}
+              <h4 className="title">“ The Person Born With A Talent They Are Meant To Use Will Find Their Greatest Happiness In Using It ”</h4>
+              <div className="author text-right">- Johann Wolfgang von Goethe</div>
               <br />
-              <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
+              {/* <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
                 repudiandae a nulla consequuntur dolore soluta deserunt itaque
                 voluptas, quae, sint, porro praesentium rerum quas dicta minus
                 earum modi tempore enim!
-              </p>
+              </p> */}
             </div>
           </Col>
         </Row>
       </div>
     </Container>
     <style jsx>{`
+      .author{
+        font-size: 22px;
+        width: 100%;
+      }
       .hero {
         width: 100%;
         color: #333;
@@ -41,8 +47,9 @@ export default () => (
         width: 100%;
         font-weight: bold;
         line-height: 1.15;
-        font-size: 4em;
+        font-size: 2.75em;
         text-align: center;
+        // text-transform: uppercase;
       }
       .subtitle {
         width: 100%;

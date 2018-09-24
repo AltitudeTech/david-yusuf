@@ -10,13 +10,21 @@ export default () => (
     <div className="bg-hire-me hire-me-section">
       <Container>
         <div className="text">
-          <span>consectetur adipiscing elit, sed do eiusmod tempor</span>
-          <h1 className="title">Lorem ipsum dolor<br/> sit amet!</h1>
+          {/* <span>consectetur adipiscing elit, sed do eiusmod tempor</span> */}
+          {/* <h1 className="title">Lorem ipsum dolor<br/> sit amet!</h1> */}
+          <h3 className="title">“ Talent is a univeral gift, <br />But it takes a lot of courage to use it.
+          <br/>Don't be afraid to be the best ”</h3>
+          <div className="author text-right">- Paulo Coelho</div>
           <Button text='Contact Me Today' href="/contact"/>
         </div>
       </Container>
     </div>
     <style jsx>{`
+      .author{
+        font-size: 22px;
+        width: 100%;
+        padding-bottom: 70px;
+      }
       .hero {
         width: 100%;
       }
@@ -27,8 +35,8 @@ export default () => (
       }
       .title {
         line-height: 1.15;
-        font-size: 68px;
-        padding-bottom: 70px;
+        font-size: 40px;
+        text-transform: capitalize;
       }
       .bg-hire-me {
         width: 100%;

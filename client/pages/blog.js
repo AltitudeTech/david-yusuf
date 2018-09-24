@@ -23,7 +23,7 @@ const blog = (
           padding-top: 250px;
         }
         .bg-home {
-          background-image: url("/static/images/blog-banner.jpg");
+          background-image: url("/static/images/blog-banner-1.jpg");
           height: 65vh;
           width: 100%;
         }
