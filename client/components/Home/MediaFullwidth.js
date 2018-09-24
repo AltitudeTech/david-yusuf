@@ -1,11 +1,22 @@
 import { Container, Row, Col } from "reactstrap";
-import SvgLoader from 'bv-react-svgloader'
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  // GooglePlusShareButton,
+  LinkedinShareButton,
+  LinkedinIcon,
+  TwitterShareButton,
+  TwitterIcon,
+  WhatsappShareButton,
+  WhatsappIcon,
+} from 'react-share';
 
 import Section from "../Section";
 
 import expertise from '../../../expertise';
 // client\static\images\share.svg
 
+const PAGE_LINK = "http://david-yusuf.com/expertise";
 export default () => (
   <Section>
     <div className="hero">
@@ -18,7 +29,6 @@ export default () => (
             <Col md={4}>
               <div className="post-item">
                 <img src={item.image}  width="350px" height="200px"/>
-                {/* <div className="post-image" /> */}
               </div>
             </Col>
             <Col md={8}>
@@ -32,13 +42,54 @@ export default () => (
                 sunt in culpa qui officia deserunt mollit anim id est laborum
               </p>
               {/* <a href="#"><img width="15px" src='/static/images/share.svg'/></a> */}
-              <a href="#">Share <img width="15px" src='/static/images/share.svg'/></a>
+              {/* <a href="#">Share <img width="15px" src='/static/images/share.svg'/></a> */}
+              <div className="e-share">
+                <FacebookShareButton
+                  url={PAGE_LINK}
+                  quote={item.title}
+                >
+                  <FacebookIcon
+                    size={32}
+                  />
+                </FacebookShareButton>
+                <LinkedinShareButton
+                  url={PAGE_LINK}
+                  title={item.title}
+                >
+                  <LinkedinIcon
+                    size={32}
+                  />
+                </LinkedinShareButton>
+                <TwitterShareButton
+                  url={PAGE_LINK}
+                  title={item.title}
+                >
+                  <TwitterIcon
+                    size={32}
+                  />
+                </TwitterShareButton>
+                <WhatsappShareButton
+                  url={PAGE_LINK}
+                  title={item.title}
+                >
+                  <WhatsappIcon
+                    size={32}
+                  />
+                </WhatsappShareButton>
+              </div>
             </Col>
           </Row>
         ))}
       </Container>
     </div>
     <style jsx>{`
+      .e-share {
+        display: flex;
+        float: right;
+      }
+      :global(.SocialMediaShareButton):focus{
+        outline: none;
+      }
       .hero {
         width: 100%;
         color: #333;
@@ -51,25 +102,6 @@ export default () => (
       }
       .post-item img {
         border: 1px solid #cacaca;
-      }
-      // .post-image {
-      //   height: 200px;
-      //   background-color: gray;
-      //   opacity: 1 !important;
-      //   -webkit-transition: opacity 0.3s ease-out;
-      //   -moz-transition: opacity 0.3s ease-out;
-      //   -ms-transition: opacity 0.3s ease-out;
-      //   -o-transition: opacity 0.3s ease-out;
-      //   transition: opacity 0.3s ease-out;
-      //   -webkit-backface-visibility: hidden;
-      //   backface-visibility: hidden;
-      //   -webkit-transform-style: preserve-3d;
-      // }
-      .post-image:hover {
-        opacity: 0.5 !important;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        -webkit-transform-style: preserve-3d;
       }
       .post-item {
         height: 250px;
