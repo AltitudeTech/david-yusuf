@@ -11,67 +11,25 @@ export default () => (
       </div>
       <br /> */}
       <Row>
-        <Col md={6}>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum
-          </p>
+        <Col md={6} className="text-center tal">
+          <h3>Lorem Ipsum dolor sit amit</h3>
+          <img src="/static/images/home1.jpg"/>
         </Col>
-        <Col md={6}>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum
-          </p>
+        <Col md={6} className="text-center tal">
+          <h3>Lorem Ipsum dolor sit amit</h3>
+          <img src="/static/images/home2.jpg"/>
         </Col>
       </Row>
     </Container>
     <style jsx>{`
-      // .hero {
-      //   width: 100%;
-      //   color: #333;
-      // }
-      // .title {
-      //   width: 100%;
-      //   font-weight : bold ;
-      //   line-height: 1.15;
-      //   font-size:3em ;
-      //   text-align: center;
-      // }
-      // .subtitle {
-      //   width: 100%;
-      //   line-height: 1.15;
-      //   font-weight : bold ;
-      //   font-size: 2em ;
-      //   text-align: center;
-      // }
+      :global(.tal):hover img {
+        filter: grayscale(0%);
+      }
+      :global(.tal) img {
+        filter: grayscale(100%);
+        transition: all 1s;
+        height: 350px;
+      }
       .p {
         margin: 0;
         padding: 12px 0 0;
