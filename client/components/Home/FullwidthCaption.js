@@ -15,7 +15,7 @@ export default () => (
       <Container>
         <Row>
           <Col md={12}>
-            <h2 className="title">My Latest Insight</h2>
+            {/* <h2 className="title">My Latest Insight</h2> */}
             <p className="pb-20">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.

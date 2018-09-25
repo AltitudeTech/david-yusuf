@@ -10,7 +10,7 @@ module.exports = [
     key: 'sh'
   },
   {
-    title: 'Executive Search, Assesment and Selection',
+    title: 'Executive Pay and Benefits',
     image: '/static/images/experitise/3-es.jpg',
     key: 'es'
   },
@@ -20,8 +20,13 @@ module.exports = [
     key: 'tc'
   },
   {
-    title: 'Human Resource Analytics, Diversity and Inclusion',
+    title: 'Human Resource Analytics',
     image: '/static/images/experitise/5-hr.jpg',
     key: 'hr'
+  },
+  {
+    title: 'Culture, Diversity and Inclusion',
+    image: '/static/images/experitise/5-hr.jpg',
+    key: 'cd'
   },
 ]

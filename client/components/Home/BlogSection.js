@@ -16,7 +16,8 @@ export default props => (
     <div className="blog-section">
       <Container>
         <div className="text-center">
-          <h1 className="title">My Latest Insights</h1>
+          {/* <h1 className="title">My Latest Insights</h1> */}
+          <h1 className="title">Insight</h1>
           <br />
           <Query query={ALL_POSTS_QUERY} variables={{ page: 1 }}>
             {({ data: { posts }, loading, error }) => {

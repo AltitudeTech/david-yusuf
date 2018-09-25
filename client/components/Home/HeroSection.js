@@ -12,11 +12,11 @@ export default () => (
       <br /> */}
       <Row>
         <Col md={6} className="text-center tal">
-          <h3>Lorem Ipsum dolor sit amit</h3>
+          <h3>Illuminate your path to success</h3>
           <img src="/static/images/home1.jpg"/>
         </Col>
         <Col md={6} className="text-center tal">
-          <h3>Lorem Ipsum dolor sit amit</h3>
+          <h3>Unlock workforce potential</h3>
           <img src="/static/images/home2.jpg"/>
         </Col>
       </Row>
