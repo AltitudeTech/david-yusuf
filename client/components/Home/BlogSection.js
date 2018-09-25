@@ -1,56 +1,53 @@
-import { Fragment } from 'react'
+import { Fragment } from "react";
 import { Container, Row, Col } from "reactstrap";
-import { Query } from 'react-apollo'
+import { Query } from "react-apollo";
 
-import { ALL_POSTS_QUERY } from '../../lib/graphql/queries'
+import { ALL_POSTS_QUERY } from "../../lib/graphql/queries";
 
-import Button from '../Button'
-import Section from '../Section'
-import Post from '../Post'
+import Button from "../Button";
+import Section from "../Section";
+import Post from "../Post";
 import PostsError from "../PostsError";
 import PostsEmpty from "../PostsEmpty";
 import LoadingPosts from "../LoadingPosts";
 
 export default props => (
-  <Section
-    backgroundColor='#f1f1f1'
-    >
-      <div className="blog-section">
-        <Container>
-          <div className="text-center">
-            <h1 className="title">My Latest Blog Posts</h1>
-            <br/>
-            <Query
-              query={ALL_POSTS_QUERY}
-              variables={{ page: 1 }}
-              >{
-              ({data: { posts }, loading, error}) => {
-                if (loading) return <LoadingPosts />
-                if (error) {
-                  console.log(error);
-                  return <PostsError />
-                }
-                // console.log(posts);
-                const { items } = posts;
+  <Section backgroundColor="#f1f1f1">
+    <div className="blog-section">
+      <Container>
+        <div className="text-center">
+          <h1 className="title">My Latest Insights</h1>
+          <br />
+          <Query query={ALL_POSTS_QUERY} variables={{ page: 1 }}>
+            {({ data: { posts }, loading, error }) => {
+              if (loading) return <LoadingPosts />;
+              if (error) {
+                console.log(error);
+                return <PostsError />;
+              }
+              // console.log(posts);
+              const { items } = posts;
 
-                if (items.length === 0) return <PostsEmpty />;
+              if (items.length === 0) return <PostsEmpty />;
 
-                return  <Fragment>
+              return (
+                <Fragment>
                   <Row>
-                    {items.slice(0, 3).map(post=>(
+                    {items.slice(0, 3).map(post => (
                       <Col md={4} key={post._id}>
-                        <Post post={post}/>
+                        <Post post={post} />
                       </Col>
                     ))}
                   </Row>
                   <br />
-                  <Button dark text='View More Posts ' href="/blog"/>
+                  <Button dark text="View More Posts " href="/blog" />
                 </Fragment>
-                }
-              }</Query>
-          </div>
-        </Container>
-      </div>
+              );
+            }}
+          </Query>
+        </div>
+      </Container>
+    </div>
     <style jsx>{`
       .text-center {
         margin: 0;
@@ -74,6 +71,6 @@ export default props => (
         position: relative;
         // align-items: center;
       }
-      `}</style>
+    `}</style>
   </Section>
 );
