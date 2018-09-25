@@ -66,14 +66,14 @@ Enquiry.schema.methods.sendNotificationEmail = function () {
 
     if (!process.env.MAILGUN_API_KEY || !process.env.MAILGUN_DOMAIN) {
       console.log('Unable to send email - no mailgun credentials provided');
-      return callback(new Error('could not find mailgun credentials'));
+      reject(new Error('could not find mailgun credentials'));
     }
 
     const brand = keystone.get('brand');
 
-    keystone.list('Admin').model.find({ recieveGuestEnquiries: true }).exec((err, admins) => {
-      if (err) {
-        reject(err);
+    keystone.list('Admin').model.find({ recieveGuestEnquiries: true }).exec((e, admins) => {
+      if (e) {
+        reject(e);
       }
       if (admins) {
         new keystone.Email({
@@ -136,6 +136,7 @@ Enquiry.schema.methods.sendConfirmationEmail = function () {
     resolve();
   }));
 };
+
 /**
  * Registration
  */

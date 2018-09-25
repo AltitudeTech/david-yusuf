@@ -26,7 +26,7 @@ module.exports = [
   },
   {
     title: 'Culture, Diversity and Inclusion',
-    image: '/static/images/experitise/5-hr.jpg',
+    image: '/static/images/experitise/6-cd.jpg',
     key: 'cd'
   },
 ]
