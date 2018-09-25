@@ -30,6 +30,9 @@ export default () => (
         transition: all 1s;
         height: 350px;
       }
+      :global(.tal) h3 {
+        text-transform: capitalize;
+      }
       .p {
         margin: 0;
         padding: 12px 0 0;
