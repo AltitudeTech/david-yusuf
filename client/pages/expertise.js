@@ -7,11 +7,11 @@ import ContactForm from "../components/ContactForm";
 
 const expertise = (<div className="bg-home page-header">
                         <Container>
-                            <h2>Expertise</h2>
+                            <h2 className="text-right">Expertise</h2>
                         </Container>
                     <style jsx>{`
                         .bg-home {
-                            background-image:url('/static/images/home-background.svg') ;
+                            background-image:url('/static/images/expertise-background.png') ;
                             height: 85vh;
                             width: 100%;
                           }

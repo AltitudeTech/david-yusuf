@@ -10,7 +10,7 @@ export default ({ experience : {
   description
   }
 }) => (
-  <Section>
+  <Section backgroundColor='#F1F1F1'>
     <div className="hero">
       <Container>
           <h2 className="mb-1"

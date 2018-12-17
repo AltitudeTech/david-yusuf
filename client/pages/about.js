@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import Layout from "../components/Layout";
 import AboutHero from "../components/Home/AboutHero";
+import AboutContent from "../components/AboutContent";
 import FullwidthSection from "../components/Home/FullwidthSection";
 import ContactForm from "../components/ContactForm";
 // import BlankSection from "../components/Home/BlankSection";
@@ -38,6 +39,7 @@ const Home = () => (
   <Fragment>
     <Layout about="logo2">
       <AboutHero />
+      <AboutContent />
       {experience.map((exp, i)=> <FullwidthSection key={i} experience={exp}/>)}
       <ContactForm showHeader/>
       {/* <BlankSection /> */}

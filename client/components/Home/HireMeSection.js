@@ -5,7 +5,7 @@ import Section from '../Section'
 
 export default () => (
   <Section
-    backgroundImage='/static/images/hire-me-background.svg'
+    backgroundImage='/static/images/hire-me-background.png'
     >
     <div className="bg-hire-me hire-me-section">
       <Container>

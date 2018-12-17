@@ -2,8 +2,6 @@ import React, { Fragment } from "react";
 import {Container} from "reactstrap";
 // import Link from "next/link";
 
-
-
 // import Head from '../components/head'
 import Layout from "../components/Layout";
 import ContactForm from "../components/ContactForm";
@@ -14,7 +12,7 @@ const contact = (<div className="bg-home page-header">
                     </Container>
                     <style jsx>{`
                         .bg-home {
-                            background-image:url('/static/images/contact-banner.jpg') ;
+                            background-image:url('/static/images/contact-background.png') ;
                             background-size: contain ;
                             height: 80vh;
                             width: 100%;
