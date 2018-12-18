@@ -1,6 +1,6 @@
 module.exports = [
   {
-    title: 'Talent Identification, Aquisition and Development',
+    title: 'Talent Identification, Acquisition and Development',
     image: '/static/images/experitise/1-ti.jpg',
     key: 'ti'
   },
