@@ -5,7 +5,8 @@ import Section from '../Section'
 
 export default () => (
   <Section
-    backgroundImage='/static/images/hire-me-background.png'
+    // backgroundImage='/static/images/hire-me-background.png'
+    className='sect-filtered'
     >
     <div className="bg-hire-me hire-me-section">
       <Container>
@@ -20,6 +21,15 @@ export default () => (
       </Container>
     </div>
     <style jsx>{`
+      :global(.sect-filtered):hover {
+        background-blend-mode: lighten;
+      }
+      :global(.sect-filtered) {
+        background-image: linear-gradient(black, black), url(/static/images/hire-me-background.png);
+        background-size: cover;
+        background-blend-mode: saturation;
+        transition: all 1s;
+      }
       .author{
         font-size: 22px;
         width: 100%;
