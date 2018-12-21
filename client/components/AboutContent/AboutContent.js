@@ -8,8 +8,8 @@ export default () => (
     <Container>
         <Row>
           <Col md={6}>
-            <p className="mt-3">
-              Discover your true talent, nature and develop those talents(s), and rise to the top.
+            <p className="content">
+              Discover your true talent, nature and develop those talent(s), and rise to the top.
             </p>
           </Col>
           <Col md={6} className="text-center">
@@ -18,11 +18,8 @@ export default () => (
         </Row>
     </Container>
     <style jsx>{`
-      .p {
-        margin: 0;
-        padding: 12px 0 0;
-        font-size: 13px;
-        color: #333;
+      .content {
+        font-size: 1.5rem;
       }
     `}</style>
   </Section>
