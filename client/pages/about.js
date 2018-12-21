@@ -12,26 +12,20 @@ const experience = [
     name: 'Humares Capital',
     url: 'Humares Capital',
     subText: 'President and CEO',
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-    reprehenderit in voluptate velit esse cillum dolore eu fugiat
-    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-    sunt in culpa qui officia deserunt mollit anim id est laborum`,
+    description: `is the leading Human Capital Development Company in Africa and Middle East,
+    offering world class HR services to local and multinational corporations.
+    We leverage latest HR technology, proven and excellent HR systems and brightest minds in global HR practices.
+    We currently serve over 100 private sector firms and not-for-profit organizations,
+    across 20 countries.`,
   },
   {
     logo: '/static/images/about/bm-logo.svg',
     name: 'Blue Mountain',
     url: 'Blue Mountain',
     subText: 'Managing Partner',
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-    reprehenderit in voluptate velit esse cillum dolore eu fugiat
-    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-    sunt in culpa qui officia deserunt mollit anim id est laborum`,
+    description: `is the leading Executive Search consulting firm with stupendous ability to develop young leadership talents breaking into the C-suite.
+    We undertake the most rigorous leadership assessment program on the market with up to 1000 leadership skills point to consider.
+    Our leadership development program offers credible fast track opportunities for new and young leadership talents across multiple sectors of the economy.`,
   },
 ]
 

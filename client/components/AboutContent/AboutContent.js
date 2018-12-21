@@ -9,10 +9,7 @@ export default () => (
         <Row>
           <Col md={6}>
             <p className="mt-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-              repudiandae a nulla consequuntur dolore soluta deserunt itaque
-              voluptas, quae, sint, porro praesentium rerum quas dicta minus
-              earum modi tempore enim!
+              Discover your true talent, nature and develop those talents(s), and rise to the top.
             </p>
           </Col>
           <Col md={6} className="text-center">
