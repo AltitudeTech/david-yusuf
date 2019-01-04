@@ -15,7 +15,7 @@ export default () => (
             <div className="hero-text">
               <div>
                 {/* <h4 className="title">The person born with a talent they are meant to use will find their greatest happiness in using it</h4> */}
-                <h4 className="title">“ The Person Born With A Talent They Are Meant To Use Will Find Their Greatest Happiness In Using It ”</h4>
+                <h4 className="title">The Person Born With A Talent They Are Meant To Use Will Find Their Greatest Happiness In Using It.</h4>
                 <div className="author text-right">- Johann Wolfgang von Goethe</div>
                 <br />
                 {/* <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
