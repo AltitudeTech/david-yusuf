@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Container } from "reactstrap";
 import Layout from "../components/Layout";
-import BlankSection from "../components/Home/BlankSection";
+import BottomTextSection from "../components/BottomTextSection";
 // import MediaFullwidth from "../components/Home/MediaFullwidth";
 import FullwidthCaption from "../components/Home/FullwidthCaption";
 import BlogGridSection from "../components/Home/BlogGridSection";
@@ -58,7 +58,7 @@ const Faith = () => (
       {/* <BlogGridSection />
       <BlogGridSection />
       <BlogGridSection /> */}
-      <BlankSection />
+      <BottomTextSection />
     </Layout>
   </Fragment>
 );

@@ -1,5 +1,11 @@
 import gql from 'graphql-tag'
 
+export const CURRENT_TIME_QUERY = gql`
+  query {
+    currentTime
+  }
+`
+
 export const ALL_POSTS_QUERY = gql`
   query ($page: Int!){
     posts(page: $page, perPage: 6, sort: PUBLISHEDDATE_DESC, filter: {state: published}){

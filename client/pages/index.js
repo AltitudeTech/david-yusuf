@@ -6,7 +6,7 @@ import Layout from "../components/Layout";
 import HeroSection from "../components/Home/HeroSection";
 import HireMeSection from "../components/Home/HireMeSection";
 import BlogSection from "../components/Home/BlogSection";
-import BlankSection from "../components/Home/BlankSection";
+import BottomTextSection from "../components/BottomTextSection";
 
 const home = (<div className="bg-home page-header">
                 <div className="header-container">
@@ -62,7 +62,7 @@ const Home = () => (
       <HeroSection />
       <HireMeSection />
       <BlogSection />
-      <BlankSection />
+      <BottomTextSection />
     </Layout>
   </Fragment>
 );

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Container } from "reactstrap";
 import SvgLoader from 'bv-react-svgloader'
+import FooterYear from './FooterYear'
 
 import links from '../routes'
 
@@ -35,7 +36,7 @@ export default () => {
           ))}
         </div>
       </nav>
-      <p>2018 David Yusuf. All rights reserved. </p>
+      <p><FooterYear /> David Yusuf. All rights reserved. </p>
       <nav>
         {bottomLinks.map(({text, href}, i) => (
           <Link href={href} key={i}>
