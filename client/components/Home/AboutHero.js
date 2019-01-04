@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "reactstrap";
 
 import Section from "../Section";
-import SvgLoader from "bv-react-svgloader";
+// import SvgLoader from "bv-react-svgloader";
 
 export default () => (
   <Section>
@@ -9,7 +9,8 @@ export default () => (
       <div className="hero">
         <Row>
           <Col md={5}>
-            <SvgLoader src="/static/images/about.svg" />
+            <img src="/static/images/about.svg" />
+            <h2>Executive Coach & Career Strategist</h2>
           </Col>
           <Col md={7}>
             <div className="hero-text">

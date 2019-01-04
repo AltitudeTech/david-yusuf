@@ -8,7 +8,6 @@ export default () => (
     <Container>
         <Row>
           <Col md={6}>
-            <h2>Executive Coach & Career Strategist</h2>
             <p className="content">
               Discover your true talent, nature and develop those talent(s), and rise to the top.
             </p>
